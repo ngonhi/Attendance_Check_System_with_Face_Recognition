@@ -1,0 +1,102 @@
+{
+    "bui_song_kiet": {
+        "name": "Bùi Song Kiệt",
+        "emp_id": "3658424"
+    },
+    "bui_thi_lien": {
+        "name": "Bùi Thị Liên",
+        "emp_id": "3658442"
+    },
+    "dang_chi_trung": {
+        "name": "Đặng Chí Trung",
+        "emp_id": "3658433"
+    },  
+    "do_minh_hieu": {
+        "name": "Đỗ Minh Hiếu",
+        "emp_id": "3658432"
+    },
+    "do_minh_nguyet": {
+        "name": "Đỗ Minh Nguyệt",
+        "emp_id": "3658437"
+    },
+    "duong_chi_vinh": {
+        "name": "Dương Chí Vinh",
+        "emp_id": "3658407"
+    },
+    "hoang_cong_duc": {
+        "name": "Hoàng Công Đức",
+        "emp_id": "3658392"
+    },
+    "huynh_y_vy": {
+        "name": "Huỳnh Ý Vy",
+        "emp_id": "3658430"
+    }, 
+    "lam_van_sang_em": {
+        "name": "Lâm Văn Sang Em",
+        "emp_id": "3658396"
+    },
+    "le_cong_pha": {
+        "name": "Lê Công Pha",
+        "emp_id": "3658409"
+    },
+    "le_ngoc_hai": {
+        "name": "Lê Ngọc Hải",
+        "emp_id": "3658410"
+    },
+    "luu_trung_hieu": {
+        "name": "Lưu Trung Hiếu",
+        "emp_id": "3658426"
+    },
+    "mai_nguyen_anh_vu": {
+        "name": "Mai Nguyễn Anh Vũ",
+        "emp_id": "3658398"
+    },
+    "ngo_phuong_nhi": {
+        "name": "Ngô Phương Nhi",
+        "emp_id": "3658436"
+    }, 
+    "nguyen_duy_nhat": {
+        "name": "Nguyễn Duy Nhất",
+        "emp_id": "3658405"
+    },
+    "nguyen_minh_dung": {
+        "name": "Nguyễn Minh Dũng",
+        "emp_id": "3658403"
+    },
+    "nguyen_thi_bich_thao": {
+        "name": "Nguyễn Thị Bích Thảo",
+        "emp_id": "3658419"
+    }, 
+    "nguyen_thi_hai_yen": {
+        "name": "Nguyễn Thị Hải Yến",
+        "emp_id": "3658443"
+    },
+    "nguyen_thi_minh_phuong": {
+        "name": "Nguyễn Thị Minh Phương",
+        "emp_id": "3658415"
+    },
+    "tran_tien_hiep": {
+        "name": "Trần Tiến Hiệp",
+        "emp_id": "3658435"
+    },
+    "tran_van_tuan": {
+        "name": "Trần Văn Tuấn",
+        "emp_id": "3658413"
+    }, 
+    "vo_duc_man": {
+        "name": "Võ Đức Mẫn",
+        "emp_id": "3658394"
+    },
+    "vo_minh_tam": {
+        "name": "Võ Minh Tâm",
+        "emp_id": "3658402"
+    }, 
+    "vu_minh_giang": {
+        "name": "Vũ Minh Giang",
+        "emp_id": "3658421"
+    },
+    "vu_trong_linh": {
+        "name": "Vũ Trọng Linh",
+        "emp_id": "3658427"
+    }
+}
