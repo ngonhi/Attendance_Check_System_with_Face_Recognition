@@ -1,18 +1,3 @@
-import os
-import unittest
-
-
-def load_tests(loader, standard_tests, pattern):
-    # top level directory cached on loader instance
-    this_dir = os.path.dirname(__file__)
-    pattern = pattern or "test*.py"
-    # We are inside unittest.test.testmock, so the top-level is three notches up
-    top_level_dir = os.path.dirname(os.path.dirname(os.path.dirname(this_dir)))
-    package_tests = loader.discover(start_dir=this_dir, pattern=pattern,
-                                    top_level_dir=top_level_dir)
-    standard_tests.addTests(package_tests)
-    return standard_tests
-
-
-if __name__ == '__main__':
-    unittest.main()
+version https://git-lfs.github.com/spec/v1
+oid sha256:7593367ba4055f44c2d42866cbfe933f09a56e5d5680bf121d8d9ca624846e7c
+size 641

@@ -1,20 +1,3 @@
-#!/usr/bin/env python
-"""
-=============
-Edge Colormap
-=============
-
-Draw a graph with matplotlib, color edges.
-You must have matplotlib>=87.7 for this to work.
-"""
-# Author: Aric Hagberg (hagberg@lanl.gov)
-
-import matplotlib.pyplot as plt
-import networkx as nx
-
-G = nx.star_graph(20)
-pos = nx.spring_layout(G)
-colors = range(20)
-nx.draw(G, pos, node_color='#A0CBE2', edge_color=colors,
-        width=4, edge_cmap=plt.cm.Blues, with_labels=False)
-plt.show()
+version https://git-lfs.github.com/spec/v1
+oid sha256:465271cca369a6e46c6f79ab29ee985017f2495b768fe88eb34544a721037020
+size 478
