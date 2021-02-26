@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="topnav">
+    {% if session.logged_in %}
+		<a href="/logout/">Logout</a>
+        <a href='/home'>Back</a>
+	{% else %}
+		<a href="/login/">Login</a>
+		<a href="/register/">Sign up</a>
+	{% endif %}
+</div>
+
+<h2>List of Employees</h2>
+
+<table>
+        <tr>
+            <th>Employee Name</th>
+            <th>Employee ID</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        {% for d in info.data %}
+        <tr>
+            <td>{{d.name}}</td>
+            <td>{{d.empID}}</td>
+            <td>{{d.email}}</td>
+            <td>{{d.phone}}</td>
+        </tr>
+        {% endfor %}
+</table> <br>
+
+
+{% endblock body %}

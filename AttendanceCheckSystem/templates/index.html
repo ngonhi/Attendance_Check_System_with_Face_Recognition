@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="topnav">
+    {% if session.logged_in %}
+		<a href="/logout/">Logout</a>
+
+		<!--<button type="submit" href="/del_acount/<int:session['username']>" form="DELETE">Delete account</button>>-->
+	{% else %}
+		<a href="/login/">Login</a>
+	{% endif %}
+</div>
+
+{% endblock body %}

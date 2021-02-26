@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="topnav">
+    {% if session.logged_in %}
+        <a href='/home'>Back</a>
+	{% else %}
+		<a href="/login/">Login</a>
+		<a href="/register/">Sign up</a>
+	{% endif %}
+</div>
+
+    <h1 align="center">Taking attendance</h1>
+    <center>
+        <img id="bg" class="center" src="{{ url_for('recognize_face') }}">
+    </center>
+    <hr>
+    <div><button id="btnFinish" class="btn btn-lg btn-primary btn-block" type="button">Finish</button></div>
+{% endblock body %}

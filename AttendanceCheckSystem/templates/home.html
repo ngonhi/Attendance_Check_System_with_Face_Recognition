@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="topnav">
+    {% if session.logged_in %}
+		<a href="/logout/">Logout</a>
+	{% else %}
+		<a href="/login/">Login</a>
+		<a href="/register/">Sign up</a>
+	{% endif %}
+</div>
+
+<div class="container">
+    {% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        {{ message }}
+    </div>
+    {% endfor %}
+
+    {% block page_content %}{% endblock %}
+</div>
+
+<hr>
+{% if session['logged_in'] %}
+    <h5>Welcome, {{session['name'] }}</h5>
+{% endif %}
+
+{% if session['admin'] %}
+<a href="/showEmployee/">
+	<button type="button" class="btn btn-primary">
+		Show Employee
+	</button>
+</a>
+
+<a href="/showRegister/">
+	<button type="button" class="btn btn-primary">
+		Insert Employee
+	</button>
+</a>
+
+<a href="/showRemove/">
+	<button type="button" class="btn btn-primary">
+		Remove Employee
+	</button>
+</a>
+<br> <br>
+<a href="/train_model">
+	<button type="button" class="btn btn-primary">
+		Train Model
+	</button>
+</a>
+
+<a href="/showRecognizer/">
+	<button type="button" class="btn btn-primary">
+		Start Checking Attendance
+	</button>
+</a>
+
+<hr>
+<h2>Check In Sheet</h2>
+<table>
+	<tr>
+		<th>Employee Name</th>
+		<th>Employee ID</th>
+		<th>Check In Time</th>
+	</tr>
+	{% for d in info%}
+	<tr>
+		<td>{{d.name}}</td>
+		<td>{{d.empID}}</td>
+		<td>{{d.time}}</td>
+	</tr>
+	{% endfor %}
+</table>
+{% endif %}
+
+
+
+{% endblock body %}
+
