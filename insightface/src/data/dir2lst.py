@@ -1,13 +1,3 @@
-
-import sys
-import os
-import face_image
-
-input_dir = sys.argv[1]
-
-dataset = face_image.get_dataset_common(input_dir, 2)
-
-for item in dataset:
-  print("%d\t%s\t%d" % (1, item.image_path, int(item.classname)))
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d128f4a3a2c7673629a41ccfbb91b7fbfe52f7c37833dda0801a19749070126
+size 223
